@@ -1,12 +1,11 @@
 # Portability Analyzer
-*By Olia Gavrysh, PM .NET team (olia.gavrysh@microsoft.com, twitter: @oliagavrysh)* 
+*By **Olia Gavrysh**, Program Manager .NET team ([email](mailto:olia.gavrysh@microsoft.com), [Twitter](https://twitter.com/oliagavrysh))*
 
-Portability Analyzer helps porting applications between different .NET platforms (.NET Framework, .NET Core, .NET Standard, UWP, Xamarin) and versions. It analyzes your assemblies' references and identifies APIs that are not portable. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a [console app].
+Portability Analyzer helps porting applications between different .NET platforms (.NET Framework, .NET Core, .NET Standard, UWP, Xamarin) and versions. It analyzes your assemblies' references and identifies APIs that are not portable. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer) and as a stand-alone [console app](https://github.com/Microsoft/dotnet-apiport/releases/latest).
 
-## Using Portability Analyzer
-### Visual Studio Extension
+## Visual Studio Extension
 
-1. **Install the extention**.
+1. **Install the extension**.
 
     a. Download and run Portability Analyzer installer from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
 
@@ -32,27 +31,31 @@ To navigate to the not supported APIs in your code, in **Error List** window dou
 
 ![Visual Studio Error List window showing information messages for not supported APIs](error-list.jpg)
 
+## Console App
 
-### Console Tool
 1. **Install the tool**. Download and unzip [Console Portability Analyzer](
 https://github.com/Microsoft/dotnet-apiport/releases/download/2.5.0-alpha/ApiPort.zip)
 
-2. From the command prompt run the following command to analyze the current directory:
-````
-\...\ApiPort.exe analyze -f .
-````
-To analyze a specific list of .dll files, type the following command: 
-````
-\...\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll
-`````
-You can find the portability report saved as an Excel file (.xlsx) in your current directory.
+2. **Select application to analyze**. You can download the sample application we use here, which is [Paint.NET](https://github.com/OliaG/hands-on-portability/releases/download/sample/sample_binaries.zip).
+
+3. **Analyze application**. From the command prompt run the following command to analyze the current directory:
+
+```
+C:\Downloads\ApiPort\ApiPort.exe analyze -f C:\Downloads\sample_binaries
+```
+
+To analyze a specific list of `.dll` files, type the following command: 
+
+```
+C:\Downloads\ApiPort\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll
+```
+
+You can find the portability report saved as an Excel file (`.xlsx`) in your current directory.
 
 ## Useful links
-* [Portability Analyzer](https://github.com/Microsoft/dotnet-apiport/releases)
 
+* [Portability Analyzer](https://github.com/Microsoft/dotnet-apiport/releases)
 * [Documentation](
 https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer)
-
 * [Why port to .NET Core](https://blogs.msdn.microsoft.com/dotnet/2016/02/10/porting-to-net-core/)
-
 * [Channel 9 video](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
