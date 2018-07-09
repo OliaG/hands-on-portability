@@ -60,5 +60,5 @@ You can find the portability report saved as an Excel file (`.xlsx`) in your cur
     * Visual Studio 2017 Extension [Readme](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/VSExtension/README.md), [Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
 * [Documentation](
 https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer)
-* [Why port to .NET Core](https://blogs.msdn.microsoft.com/dotnet/2016/02/10/porting-to-net-core/)
+* [Why port to .NET Core](https://blogs.msdn.microsoft.com/dotnet/2018/05/07/net-core-3-and-support-for-windows-desktop-applications/)
 * [Channel 9 video](https://channel9.msdn.com/Blogs/Seth-Juarez/A-Brief-Look-at-the-NET-Portability-Analyzer)
