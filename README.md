@@ -19,7 +19,7 @@ Portability Analyzer helps porting applications between different .NET platforms
 
 3. **Run the analyzer**. In Visual Studio open your application that you would like to analyze.
 
-For this example let's open ???
+For this example let's download the sample source code, for which we use [PowerCollections](https://github.com/OliaG/hands-on-portability/releases/download/sample/sample_sources.zip).
 
 To analyze your entire project, right-click on your project in Solution Explorer and select **Analyze Assembly Portability**. To analyze only particular executable or DLL, go to the **Analyze** menu and select **Analyze Assembly Portability**. From there, select what you'd like to analyze.
 
