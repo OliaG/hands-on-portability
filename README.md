@@ -41,13 +41,13 @@ https://github.com/Microsoft/dotnet-apiport/releases/download/2.5.0-alpha/ApiPor
 3. **Analyze application**. From the command prompt run the following command to analyze the current directory:
 
 ```
-C:\Downloads\ApiPort\ApiPort.exe analyze -f C:\Downloads\sample_binaries
+C:\Downloads\ApiPort\net461\win7-x64\ApiPort.exe analyze -f C:\Downloads\sample_binaries
 ```
 
 To analyze a specific list of `.dll` files, type the following command: 
 
 ```
-C:\Downloads\ApiPort\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll
+C:\Downloads\ApiPort\net461\win7-x64\ApiPort.exe analyze -f first.dll -f second.dll -f third.dll
 ```
 
 You can find the portability report saved as an Excel file (`.xlsx`) in your current directory.
