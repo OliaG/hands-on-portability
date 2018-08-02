@@ -38,7 +38,7 @@ https://github.com/Microsoft/dotnet-apiport/releases/download/2.5.0-alpha/ApiPor
 
 2. **Select application to analyze**. You can download the sample application we use here, which is [Paint.NET](https://github.com/OliaG/hands-on-portability/releases/download/sample/sample_binaries.zip).
 
-3. **Analyze application**. From the command prompt run the following command to analyze the current directory:
+3. **Analyze application**. From the command prompt run the following command to analyze the assemblies in the *sample_binaries* directory:
 
 ```
 C:\Downloads\ApiPort\net461\win7-x64\ApiPort.exe analyze -f C:\Downloads\sample_binaries
